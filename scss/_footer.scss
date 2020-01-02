@@ -1,0 +1,67 @@
+.footer {
+
+    &__menu {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        &-title {
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            line-height: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #191d39;
+        }
+        &-block {
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 30px;
+                color: #000;
+                    &:hover {
+                        color: $pink;
+                        transition: all .3s ease;
+                    }
+            }
+        }
+        &-email {
+            a {
+                color: #c7336f;
+                font-size: 16px;
+            }
+        }
+        &-icons {
+            &__tweeter {
+                margin-right: 20px;
+                &::before {
+                    font-family: 'icomoon';
+                    content: "\ea96";
+                    color: $pink;
+                }
+            }
+            &__fb {
+                    &::before {
+                        font-family: 'icomoon';
+                        content: "\ea90";
+                        color: $pink;
+                    }
+            }
+        }
+    }
+    &__bottom {
+        background-color: #191d39;
+        padding: 65px 0;
+            &-copyright {
+                display: block;
+                color: #fff;
+                font-size: 12px;
+                max-width: 192px;
+                line-height: 30px;
+            }
+    }
+}
